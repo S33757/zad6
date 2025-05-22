@@ -11,14 +11,14 @@ public class Ksiazka extends MediaBiblioteczne{
 
     @Override
     public String wyswietlInformacje(){
-        return super.wyswietlInformacje() + "Autor: " + autor + "LiczbaStron: " + liczbaStron;
+        return super.wyswietlInformacje() + ", Autor: " + autor + ", Liczba stron: " + liczbaStron;
     }
 
     public void sprawdzLiczbeStron(){
         if (liczbaStron > 500){
-            System.out.println("Ksiazka jest dluga" + " LiczbaStron: " + liczbaStron);
+            System.out.println("Ksiazka jest dluga," + " Liczba stron: " + liczbaStron);
         }else{
-            System.out.println("Ksiazka jest standardowa" + " LiczbaStron: " + liczbaStron);
+            System.out.println("Ksiazka jest standardowa," + " Liczba stron: " + liczbaStron);
         }
     }
 

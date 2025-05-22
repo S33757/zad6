@@ -29,6 +29,6 @@ public class MediaBiblioteczne {
     }
 
     public String wyswietlInformacje(){
-        return "Tytul" + tytul + "Rok wydania: " + rokWydania + "Dostepnosc: " + (dostepny ? "Dostepne" : "Wypozyczone");
+        return "Tytul: " + tytul + ", Rok wydania: " + rokWydania + ", Dostepnosc: " + (dostepny ? "Dostepne" : "Wypozyczone");
     }
 }

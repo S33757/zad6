@@ -11,14 +11,14 @@ public class Film extends MediaBiblioteczne{
 
     @Override
     public String wyswietlInformacje(){
-        return super.wyswietlInformacje() + "Rezyser: " + rezyser + " Czas Trwania: " + czasTrwania;
+        return super.wyswietlInformacje() + ", Rezyser: " + rezyser + ", Czas trwania: " + czasTrwania;
     }
 
     public void sprawdzCzasTrwania(){
         if (czasTrwania > 120){
-            System.out.println("Film jest dlugi" + " Czas Trwania: " + czasTrwania);
+            System.out.println("Film jest dlugi," + " Czas Trwania: " + czasTrwania);
         }else{
-            System.out.println("Film standardowy" + " Czas Trwania: " + czasTrwania);
+            System.out.println("Film standardowy," + " Czas Trwania: " + czasTrwania);
         }
     }
 

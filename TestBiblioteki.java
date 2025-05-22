@@ -10,7 +10,7 @@ public class TestBiblioteki {
 
         System.out.println("======== INFORMACJE O WSZYSTKICH MEDIACH =========");
         for (MediaBiblioteczne media : mediaArray) {
-            media.wyswietlInformacje();
+            System.out.println(media.wyswietlInformacje());
             System.out.println("-------------------");
         }
 
@@ -21,7 +21,6 @@ public class TestBiblioteki {
         ksiazka1.zwroc();
 
         System.out.println("\n=============== METODY SPECYFICZNE DLA TYPOW ========");
-
         ksiazka1.sprawdzLiczbeStron();
         film1.sprawdzCzasTrwania();
 
@@ -31,7 +30,8 @@ public class TestBiblioteki {
                 Ksiazka k = (Ksiazka) media;
                 k.sprawdzLiczbeStron();
             } else if (media instanceof Film) {
-                ((Film) media).sprawdzCzasTrwania();
+                Film f = (Film) media;
+                f.sprawdzCzasTrwania();
             }
         }
     }
